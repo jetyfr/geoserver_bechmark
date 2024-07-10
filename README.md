@@ -1,4 +1,9 @@
+## Geoserver benchmark
 
+The goal of this project is to compare how NetCDF and Image Mosaic (Geotiff files) perform as Geoserver input data
+
+
+## Infrastructure 
 
 > Launch Geoserver with NetCDF input and output support
 

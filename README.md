@@ -11,7 +11,7 @@ The goal of this project is to compare how NetCDF and Image Mosaic (Geotiff file
 
 > Launch PostGIS to support Image Mosaic datastore
 
-    docker run -d --name postgis -p 5432:5432 -e POSTGRES_USER=ccmm -e POSTGRES_PASSWORD=ccmm2024 -e POSTGRES_DB=ccmm -e PGDATA=/var/lib/postgresql/data/pgdata  -v ./data:/var/lib/postgresql/data --restart=always postgis/postgis
+    docker run -d --name postgis -p 5432:5432 -e POSTGRES_USER=ccmm -e POSTGRES_PASSWORD=ccmm2024 -e POSTGRES_DB=ccmm -e PGDATA=/var/lib/postgresql/data/pgdata  -v /home/vagrant/data:/var/lib/postgresql/data --restart=always postgis/postgis
 
 
 

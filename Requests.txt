@@ -1,0 +1,7 @@
+Request data from NetCDF source
+curl --location 'http://192.168.11.201:8080/geoserver/ows?service=WCS&version=2.0.1&request=GetCoverage&coverageId=test%3Atemp_nc&subset=time(%222024-07-10T01%3A00%3A00.000Z%22%2C%222024-07-13T23%3A00%3A00.000Z%22)&subset=Long(-9.75678)&subset=Lat(44.11779)&format=application%2Fx-netcdf'
+time curl --location 'http://192.168.11.201:8080/geoserver/ows?service=WCS&version=2.0.1&request=GetCoverage&coverageId=test%3Atemp_nc&subset=time(%222024-07-10T01%3A00%3A00.000Z%22%2C%222024-07-13T23%3A00%3A00.000Z%22)&subset=Long(-9.75678)&subset=Lat(44.11779)&format=application%2Fx-netcdf' > /dev/null
+
+Request data from Image Mosaic source
+curl --location 'http://192.168.11.201:8080/geoserver/ows?service=WCS&version=2.0.1&request=GetCoverage&coverageId=test%3Atemp_im&subset=time(%222024-07-10T01%3A00%3A00.000Z%22%2C%222024-07-13T23%3A00%3A00.000Z%22)&subset=Long(-9.75678)&subset=Lat(44.11779)&format=application%2Fx-netcdf'
+time curl --location 'http://192.168.11.201:8080/geoserver/ows?service=WCS&version=2.0.1&request=GetCoverage&coverageId=test%3Atemp_im&subset=time(%222024-07-10T01%3A00%3A00.000Z%22%2C%222024-07-13T23%3A00%3A00.000Z%22)&subset=Long(-9.75678)&subset=Lat(44.11779)&format=application%2Fx-netcdf' > /dev/null
